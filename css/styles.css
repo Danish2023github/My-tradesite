@@ -109,7 +109,7 @@ body {
   
   @keyframes moveLine {
     from {
-      transform: translateX(140%);
+      transform: translateX(100%);
     }
     to {
       transform: translateX(-100%);
