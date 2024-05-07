@@ -104,7 +104,7 @@ body {
     white-space: nowrap;
     color: #142850; /* Dark blue color */
     font-weight: bold;
-    animation: moveLine 20s linear infinite;
+    animation: moveLine 50s linear infinite;
   }
   
   @keyframes moveLine {
