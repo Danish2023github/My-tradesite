@@ -108,12 +108,12 @@ header {
   white-space: nowrap;
   color: #142850; /* Dark blue color */
   font-weight: bold;
-  animation: moveLine 50s linear infinite;
+  animation: moveLine 40s linear infinite;
 }
 
 @keyframes moveLine {
   from {
-    transform: translateX(140%);
+    transform: translateX(55%);
   }
   to {
     transform: translateX(-100%);
