@@ -1,161 +1,227 @@
+/*******************************************body css (begins)*******************************************/
+/*/
+/*/
+/*/
+/*/
+
+/*body (begins)*/
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* light grey */
+}
+/*body (ends)*/
+
+/*/
+/*/
+/*/
+/*/
+/*******************************************body css (ends)*******************************************/
+
+/*******************************************header css (begins)*******************************************/
+/*/
+/*/
+/*/
+/*/
+
+/*header (begins)*/
+header {
+  background-color: #336699; /* dark blue */
+  color: #ffffff; /* white text color */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*header (ends)*/
+
+/*logo (begins)*/
+.logo {
+  width: 100px;
+}
+/*logo (ends)*/
+
+/*heading (begins)*/
+.heading {
+  padding-right: 30%;
+}
+/*heading (ends)*/
+
+/*shortcut menu to sections (begins)*/
+.shortcut-to-sections {
+  text-decoration: none;
+  color: white;
+}
+/*shortcut menu to sections (ends)*/
+
+/*dropdown menu options (begins)*/
+.dropdown-menu {
+  padding: 10px;
+  font-size: 16px;
+  color: #f2f2f2;
+  background-color: #336699; /* Dark blue header background */
+  width: 100px; /* Width of the dropdown */
+}
+/*dropdown menu options (ends)*/
+
+/*/
+/*/
+/*/
+/*/
+/*******************************************header css (ends)*******************************************/
+
+/************************************audioplayer after header (begins)*********************************************/
+/*/
+/*/
+/*/
+/*/
+.audio {
+  height: 20px; /* Adjust the height as needed */
+  background-color: #336699;
+}
+/*/
+/*/
+/*/
+/*/
+/*******************************************audioplayer after headeer (ends)*******************************************/
+
+/*****************************first running line after header css (begins)*******************************/
+/*/
+/*/
+/*/
+/*/
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.moving-line {
+  position: absolute;
+  top: -45%;
+  left: 0;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  color: #142850; /* Dark blue color */
+  font-weight: bold;
+  animation: moveLine 50s linear infinite;
+}
+
+@keyframes moveLine {
+  from {
+    transform: translateX(140%);
   }
-  
-  header {
-    background-color: #336699; /* Dark blue header background */
-    color: #ffffff; /* White text color */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  to {
+    transform: translateX(-100%);
   }
-  
-  .heading {
-    padding-right: 30%;
-  }
-  
-  .logo img {
-    width: 100px; /* Adjust logo width */
-  }
-  
-  /*******************************************All section CSS (begins)*******************************************/
-  /*/
-  /*/
-  /*/
-  /*/
-  /*/
-  
-  /*Sections (begins)*/
-  
-  .all-main-sections {
-    height: 300px;
-    background-color: #4b94e3;
-  }
-  
-  /*Sections (ends)*/
-  
-  /*Section breaks (begins)*/
-  
-  .section-breaks {
-    height: 1px;
-    margin: 0px;
-    padding: 0px;
-    background-color: whitesmoke;
-    border: none;
-  }
-  
-  /*Section breaks (begins)*/
-  
-  /*Section headings (begins)*/
-  .section-headings {
-    font-size: 40px;
-    padding-top: 20px !important;
-    padding: 0;
-    margin: 0;
-    color: white;
-  }
-  /*Section headings (ends)*/
-  
-  /*Section paragraphs (begins)*/
-  .sections-paragraphs {
-    color: white;
-  }
-  /*Section paragraphs (ends)*/
-  
-  /*/
-  /*/
-  /*/
-  /*/
-  /*/
-  /*******************************************All section CSS (ends)*******************************************/
-  
-  #components {
-    padding: 10px;
-    font-size: 16px;
-    color: #f2f2f2;
-    background-color: #336699; /* Dark blue header background */
-    width: 100px; /* Width of the dropdown */
-  }
-  
-  footer {
-    background-color: #336699; /* Dark blue footer background */
-    color: #ffffff; /* White text color */
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .container {
-    position: relative;
-    width: 100%;
-    height: 25px;
-    overflow: hidden;
-    background-color: #fff;
-  }
-  
-  .moving-line {
-    position: absolute;
-    top: -45%;
-    left: 0;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    color: #142850; /* Dark blue color */
-    font-weight: bold;
-    animation: moveLine 50s linear infinite;
-  }
-  
-  @keyframes moveLine {
-    from {
-      transform: translateX(140%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-  }
-  
-  .flex {
-    display: flex;
-  }
-  
-  div {
-    margin-right: 20px;
-  }
-  
-  .a1 {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .audio {
-    height: 20px; /* Adjust the height as needed */
-    background-color: #336699;
-  }
-  
-  .custom-table {
-    border-collapse: collapse;
-  }
-  
-  .custom-table td {
-    width: 100px; /* Set width */
-    height: 50px; /* Set height */
-    border: 1px solid black;
-    text-align: center; /* Center align content */
-  }
-  
-  .custom-table td img {
-    display: block;
-    margin: 0 auto; /* Center align images */
-    margin-bottom: 10px; /* Increase vertical gap between images */
-  }
-  
-  .custom-table td .option {
-    margin-left: 10px; /* Increase horizontal gap between options */
-  }
-  
-  .single {
-    height: 20px !important;
-  }
-  
+}
+
+/*/
+/*/
+/*/
+/*/
+/***************************** first running line after header css (ends)*******************************/
+
+/*******************************************all section css (begins)*******************************************/
+/*/
+/*/
+/*/
+/*/
+
+/*sections (begins)*/
+
+.all-main-sections {
+  height: 300px;
+  background-color: #4b94e3;
+}
+
+/*sections (ends)*/
+
+/*section breaks (begins)*/
+
+.section-breaks {
+  height: 1px;
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+  border: none;
+}
+
+/*section breaks (begins)*/
+
+/*section headings (begins)*/
+.section-headings {
+  font-size: 40px;
+  padding-top: 20px !important;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+/*section headings (ends)*/
+
+/*section paragraphs (begins)*/
+.sections-paragraphs {
+  color: white;
+}
+/*section paragraphs (ends)*/
+
+/*/
+/*/
+/*/
+/*/
+/*/
+/*******************************************all section css (ends)*******************************************/
+
+.flex {
+  display: flex;
+}
+
+div {
+  margin-right: 20px;
+}
+
+.custom-table {
+  border-collapse: collapse;
+}
+
+.custom-table td {
+  width: 100px; /* Set width */
+  height: 50px; /* Set height */
+  border: 1px solid black;
+  text-align: center; /* Center align content */
+}
+
+.custom-table td img {
+  display: block;
+  margin: 0 auto; /* Center align images */
+  margin-bottom: 10px; /* Increase vertical gap between images */
+}
+
+.custom-table td .option {
+  margin-left: 10px; /* Increase horizontal gap between options */
+}
+
+.single {
+  height: 20px !important;
+}
+
+/*******************************************footer css (begins)*******************************************/
+/*/
+/*/
+/*/
+/*/
+footer {
+  background-color: #336699; /* Dark blue footer background */
+  color: #ffffff; /* White text color */
+  padding: 10px;
+  text-align: center;
+}
+/*/
+/*/
+/*/
+/*/
+/*******************************************footer css (ends)*******************************************/
