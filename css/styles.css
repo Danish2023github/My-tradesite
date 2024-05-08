@@ -37,7 +37,8 @@ header {
 /*header (ends)*/
 
 /*logo (begins)*/
-.log {
+.logo {
+  height: 20px;
   width: 20px;
 }
 /*logo (ends)*/
