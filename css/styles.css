@@ -37,7 +37,9 @@ header {
 /*header (ends)*/
 
 /*logo (begins)*/
-
+.company-logo {
+  width: 100px;
+}
 /*logo (ends)*/
 
 /*heading (begins)*/
